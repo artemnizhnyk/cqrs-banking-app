@@ -1,9 +1,6 @@
 package com.artemnizhnyk.cqrsbankingapp.domain.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.JdbcTypeCode;
@@ -14,14 +11,17 @@ import java.util.UUID;
 
 @Setter
 @Getter
-@Table(name = "accounts")
+@Table(name= "transactions")
 @Entity
-public class Account {
+public class Transaction {
 
     @JdbcTypeCode(SqlTypes.VARCHAR)
     @GeneratedValue
     @Id
     private UUID id;
-    private String number;
-    private BigDecimal balance;
+    @ManyToOne
+    private Card from;
+    @ManyToOne
+    private Card to;
+    private BigDecimal amount;
 }
