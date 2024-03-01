@@ -1,10 +1,7 @@
 package com.artemnizhnyk.cqrsbankingapp.repository;
 
-import com.artemnizhnyk.cqrsbankingapp.domain.model.Account;
-import com.artemnizhnyk.cqrsbankingapp.events.Event;
+import com.artemnizhnyk.cqrsbankingapp.events.AbstractEvent;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.UUID;
-
-public interface EventRepository extends JpaRepository<Event, Long> {
+public interface EventRepository extends JpaRepository<AbstractEvent, Long> {
 }
