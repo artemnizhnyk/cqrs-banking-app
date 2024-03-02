@@ -22,4 +22,9 @@ public class ClientServiceImpl implements ClientService {
     public Client getById(final UUID id) {
         return queryService.getById(id);
     }
+
+    @Override
+    public boolean existsByUsername(final String username) {
+        return queryService.existsByUsername(username);
+    }
 }

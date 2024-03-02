@@ -5,4 +5,6 @@ import com.artemnizhnyk.cqrsbankingapp.service.CommandService;
 import com.artemnizhnyk.cqrsbankingapp.service.QueryService;
 
 public interface ClientService extends QueryService<Client>, CommandService<Client> {
+
+    boolean existsByUsername(final String username);
 }

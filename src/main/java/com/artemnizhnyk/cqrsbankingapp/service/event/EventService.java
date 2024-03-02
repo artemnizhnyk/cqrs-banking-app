@@ -4,5 +4,5 @@ import com.artemnizhnyk.cqrsbankingapp.events.AbstractEvent;
 
 public interface EventService {
 
-    void create(AbstractEvent event);
+    void create(final AbstractEvent event);
 }
