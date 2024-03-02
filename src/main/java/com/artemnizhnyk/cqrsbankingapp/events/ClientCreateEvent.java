@@ -18,6 +18,6 @@ public class ClientCreateEvent extends AbstractEvent {
 
     @Override
     public void apply(final Aggregate aggregate) {
-        
+
     }
 }

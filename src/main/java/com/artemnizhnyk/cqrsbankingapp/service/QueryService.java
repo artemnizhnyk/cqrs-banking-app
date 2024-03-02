@@ -1,4 +1,4 @@
-package com.artemnizhnyk.cqrsbankingapp.service.transaction;
+package com.artemnizhnyk.cqrsbankingapp.service;
 
 import java.util.UUID;
 

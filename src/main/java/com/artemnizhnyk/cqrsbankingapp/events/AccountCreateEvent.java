@@ -10,10 +10,10 @@ import lombok.Setter;
 @Getter
 @NoArgsConstructor
 @Entity
-public class TransactionCreateEvent extends AbstractEvent {
+public class AccountCreateEvent extends AbstractEvent {
 
-    public TransactionCreateEvent(Object payload) {
-        super(null, EventType.TRANSACTION_CREATE, payload);
+    public AccountCreateEvent(Object payload) {
+        super(null, EventType.ACCOUNT_CREATE, payload);
     }
 
     @Override

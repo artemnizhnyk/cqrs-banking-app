@@ -1,6 +1,5 @@
 package com.artemnizhnyk.cqrsbankingapp.repository;
 
-import com.artemnizhnyk.cqrsbankingapp.domain.model.Account;
 import com.artemnizhnyk.cqrsbankingapp.domain.model.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 

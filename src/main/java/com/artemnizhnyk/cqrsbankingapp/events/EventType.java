@@ -4,5 +4,6 @@ public enum EventType {
 
     CLIENT_CREATE,
     CARD_CRATE,
-    TRANSACTION_CREATE
+    TRANSACTION_CREATE,
+    ACCOUNT_CREATE
 }
