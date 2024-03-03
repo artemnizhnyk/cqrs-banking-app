@@ -9,4 +9,6 @@ import java.util.UUID;
 public interface CardService extends QueryService<Card>, CommandService<Card> {
 
     void createByClientId(final UUID clientId);
+
+    boolean existsByNumberAndDate(final String number, final String date);
 }
