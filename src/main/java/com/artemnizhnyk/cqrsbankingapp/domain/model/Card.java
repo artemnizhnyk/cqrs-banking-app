@@ -32,4 +32,8 @@ public class Card {
     private List<Transaction> transactions;
     @ManyToOne
     private Account account;
+
+    public Card(final Account account) {
+        this.account = account;
+    }
 }
