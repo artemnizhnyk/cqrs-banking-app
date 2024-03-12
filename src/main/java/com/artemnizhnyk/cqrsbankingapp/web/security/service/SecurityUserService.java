@@ -2,6 +2,7 @@ package com.artemnizhnyk.cqrsbankingapp.web.security.service;
 
 import com.artemnizhnyk.cqrsbankingapp.domain.model.Client;
 import com.artemnizhnyk.cqrsbankingapp.service.client.ClientService;
+import com.artemnizhnyk.cqrsbankingapp.web.security.SecurityUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
