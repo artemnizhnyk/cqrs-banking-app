@@ -29,19 +29,19 @@ public class ClientController {
 
     @GetMapping("/{id}")
     public ClientDto getById(@PathVariable final UUID id) {
-        Client client = clientService.getById( id);
+        Client client = clientService.getById(id);
         return clientMapper.toDto(client);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}/cards")
     public List<CardDto> getCardsById(@PathVariable final UUID id) {
-        Client client = clientService.getById( id);
+        Client client = clientService.getById(id);
         return cardMapper.toDto(client.getCards());
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/{id}/account")
     public AccountDto getAccountById(@PathVariable final UUID id) {
-        Client client = clientService.getById( id);
+        Client client = clientService.getById(id);
         return accountMapper.toDto(client.getAccount());
     }
 }
