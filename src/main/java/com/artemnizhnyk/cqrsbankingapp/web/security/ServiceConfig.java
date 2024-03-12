@@ -1,6 +1,7 @@
 package com.artemnizhnyk.cqrsbankingapp.web.security;
 
 import com.artemnizhnyk.cqrsbankingapp.web.security.jwt.JwtProperties;
+import com.artemnizhnyk.cqrsbankingapp.web.security.jwt.JwtTokenFilter;
 import io.github.ilyalisov.jwt.service.TokenService;
 import io.github.ilyalisov.jwt.service.TokenServiceImpl;
 import lombok.RequiredArgsConstructor;
