@@ -27,4 +27,9 @@ public class ClientServiceImpl implements ClientService {
     public boolean existsByUsername(final String username) {
         return queryService.existsByUsername(username);
     }
+
+    @Override
+    public Client getByUsername(final String username) {
+        return queryService.getByUsername(username);
+    }
 }
