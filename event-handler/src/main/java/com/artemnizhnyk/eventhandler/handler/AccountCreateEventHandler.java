@@ -2,6 +2,7 @@ package com.artemnizhnyk.eventhandler.handler;
 
 import com.artemnizhnyk.common.domain.model.Account;
 import com.artemnizhnyk.common.events.AccountCreateEvent;
+import com.artemnizhnyk.eventhandler.service.account.AccountService;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import jakarta.transaction.Transactional;
