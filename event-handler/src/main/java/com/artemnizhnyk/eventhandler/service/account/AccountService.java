@@ -4,5 +4,5 @@ import com.artemnizhnyk.common.domain.model.Account;
 
 public interface AccountService {
 
-    Account create(Account account);
+    Account create(final Account account);
 }
