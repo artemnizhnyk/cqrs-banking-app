@@ -1,8 +1,6 @@
 package com.artemnizhnyk.eventhandler.handler;
 
-import com.artemnizhnyk.common.domain.model.Account;
 import com.artemnizhnyk.common.domain.model.Client;
-import com.artemnizhnyk.common.events.CardCreateEvent;
 import com.artemnizhnyk.common.events.ClientCreateEvent;
 import com.artemnizhnyk.eventhandler.service.client.ClientService;
 import com.google.gson.Gson;
