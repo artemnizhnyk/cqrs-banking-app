@@ -1,4 +1,4 @@
-package com.artemnizhnyk.eventhandler.service.account;
+package com.artemnizhnyk.eventhandler.service.card;
 
 import com.artemnizhnyk.common.domain.model.Card;
 
