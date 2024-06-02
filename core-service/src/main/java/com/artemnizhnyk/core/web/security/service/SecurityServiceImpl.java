@@ -7,6 +7,7 @@ import com.artemnizhnyk.common.domain.model.Transaction;
 import com.artemnizhnyk.core.service.card.CardService;
 import com.artemnizhnyk.core.service.client.ClientService;
 import com.artemnizhnyk.core.service.transaction.TransactionService;
+import com.artemnizhnyk.core.web.dto.CardDto;
 import com.artemnizhnyk.core.web.security.SecurityUser;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
@@ -52,7 +53,7 @@ public class SecurityServiceImpl implements SecurityService {
     }
 
     @Override
-    public boolean canAccessCard(final Card card) {
+    public boolean canAccessCard(final CardDto card) {
         try {
             Card foundCard = cardService.getByNumberAndDateAndCvv(
                     card.getNumber(), card.getDate(), card.getCvv()
