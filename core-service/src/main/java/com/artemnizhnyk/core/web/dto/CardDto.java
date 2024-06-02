@@ -15,15 +15,14 @@ public class CardDto {
     @Null(message = "Id must be null", groups = OnCreate.class)
     private UUID id;
 
-    @NotNull(message = "Number must be not null", groups = OnCreate.class)
-    @Null(message = "Number must be null")
+    @NotNull(message = "Number must be not null",
+            groups = {OnCreate.class, OnTransactionFrom.class, OnTransactionTo.class})
     private String number;
 
-    @NotNull(message = "Date must be not null", groups = OnCreate.class)
-    @Null(message = "Date must be null")
+    @NotNull(message = "Date must be not null", groups = {OnCreate.class, OnTransactionFrom.class})
     private String date;
 
-    @NotNull(message = "cvv must be not null", groups = OnCreate.class)
-    @Null(message = "cvv must be null")
+    @NotNull(message = "cvv must be not null", groups = {OnCreate.class, OnTransactionFrom.class})
+    @Null(message = "cvv must be null", groups = OnTransactionTo.class)
     private String cvv;
 }
