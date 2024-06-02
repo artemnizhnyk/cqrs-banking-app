@@ -30,4 +30,10 @@ public class ClientQueryServiceImpl implements ClientQueryService {
         return repository.findByUsername(username)
                 .orElseThrow(ResourceNotFoundException::new);
     }
+
+    @Override
+    public Client getByAccount(final UUID accountId) {
+        return repository.findByAccountId(accountId)
+                .orElseThrow(ResourceNotFoundException::new);
+    }
 }

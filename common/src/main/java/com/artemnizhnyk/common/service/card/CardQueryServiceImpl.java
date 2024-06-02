@@ -31,5 +31,9 @@ public class CardQueryServiceImpl implements CardQueryService {
                 .orElseThrow(ResourceNotFoundException::new);
     }
 
-
+    @Override
+    public Card getByNumberAndDate(final String number, final String date) {
+        return repository.findByNumberAndDate(number, date)
+                .orElseThrow(ResourceNotFoundException::new);
+    }
 }
