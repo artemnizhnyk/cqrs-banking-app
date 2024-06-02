@@ -1,4 +1,4 @@
-package com.artemnizhnyk.core.service.client;
+package com.artemnizhnyk.common.service.client;
 
 import com.artemnizhnyk.common.domain.exception.ResourceNotFoundException;
 import com.artemnizhnyk.common.domain.model.Client;

@@ -1,4 +1,4 @@
-package com.artemnizhnyk.core.service.transaction;
+package com.artemnizhnyk.common.service.transaction;
 
 import com.artemnizhnyk.common.domain.exception.ResourceNotFoundException;
 import com.artemnizhnyk.common.domain.model.Transaction;

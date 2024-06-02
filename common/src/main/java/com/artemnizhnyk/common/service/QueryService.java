@@ -1,4 +1,4 @@
-package com.artemnizhnyk.core.service;
+package com.artemnizhnyk.common.service;
 
 import java.util.UUID;
 

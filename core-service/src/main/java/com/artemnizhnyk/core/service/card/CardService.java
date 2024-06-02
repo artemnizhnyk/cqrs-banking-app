@@ -2,7 +2,7 @@ package com.artemnizhnyk.core.service.card;
 
 import com.artemnizhnyk.common.domain.model.Card;
 import com.artemnizhnyk.core.service.CommandService;
-import com.artemnizhnyk.core.service.QueryService;
+import com.artemnizhnyk.common.service.QueryService;
 
 import java.util.UUID;
 

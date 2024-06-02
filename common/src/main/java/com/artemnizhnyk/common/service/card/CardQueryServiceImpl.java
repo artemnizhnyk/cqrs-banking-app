@@ -1,4 +1,4 @@
-package com.artemnizhnyk.core.service.card;
+package com.artemnizhnyk.common.service.card;
 
 import com.artemnizhnyk.common.domain.exception.ResourceNotFoundException;
 import com.artemnizhnyk.common.domain.model.Card;
@@ -30,4 +30,6 @@ public class CardQueryServiceImpl implements CardQueryService {
         return repository.findByDateAndNumberAndCvv(number, date, cvv)
                 .orElseThrow(ResourceNotFoundException::new);
     }
+
+
 }

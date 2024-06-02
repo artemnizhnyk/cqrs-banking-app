@@ -1,7 +1,7 @@
-package com.artemnizhnyk.core.service.transaction;
+package com.artemnizhnyk.common.service.transaction;
 
 import com.artemnizhnyk.common.domain.model.Transaction;
-import com.artemnizhnyk.core.service.QueryService;
+import com.artemnizhnyk.common.service.QueryService;
 
 public interface TransactionQueryService extends QueryService<Transaction> {
 }

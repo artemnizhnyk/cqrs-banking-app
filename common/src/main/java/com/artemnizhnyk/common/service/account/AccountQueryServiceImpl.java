@@ -1,4 +1,4 @@
-package com.artemnizhnyk.core.service.account;
+package com.artemnizhnyk.common.service.account;
 
 import com.artemnizhnyk.common.domain.exception.ResourceNotFoundException;
 import com.artemnizhnyk.common.domain.model.Account;

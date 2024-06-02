@@ -1,7 +1,8 @@
-package com.artemnizhnyk.core.service.account;
+package com.artemnizhnyk.common.service.account;
 
 import com.artemnizhnyk.common.domain.model.Account;
-import com.artemnizhnyk.core.service.QueryService;
+import com.artemnizhnyk.common.service.QueryService;
+
 
 public interface AccountQueryService extends QueryService<Account> {
 }

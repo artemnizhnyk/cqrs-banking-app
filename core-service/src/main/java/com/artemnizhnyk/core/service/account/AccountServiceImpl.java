@@ -1,6 +1,7 @@
 package com.artemnizhnyk.core.service.account;
 
 import com.artemnizhnyk.common.domain.model.Account;
+import com.artemnizhnyk.common.service.account.AccountQueryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

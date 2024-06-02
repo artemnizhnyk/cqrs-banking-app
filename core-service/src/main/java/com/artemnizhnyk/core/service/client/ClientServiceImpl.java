@@ -1,6 +1,7 @@
 package com.artemnizhnyk.core.service.client;
 
 import com.artemnizhnyk.common.domain.model.Client;
+import com.artemnizhnyk.common.service.client.ClientQueryService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

@@ -1,7 +1,8 @@
-package com.artemnizhnyk.core.service.client;
+package com.artemnizhnyk.common.service.client;
 
 import com.artemnizhnyk.common.domain.model.Client;
-import com.artemnizhnyk.core.service.QueryService;
+import com.artemnizhnyk.common.service.QueryService;
+
 
 public interface ClientQueryService extends QueryService<Client> {
 
