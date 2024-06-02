@@ -4,8 +4,11 @@ import com.artemnizhnyk.common.domain.model.Account;
 import com.artemnizhnyk.common.domain.model.Client;
 import com.artemnizhnyk.common.repository.ClientRepository;
 import com.artemnizhnyk.eventhandler.service.account.AccountService;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+
+import java.util.UUID;
 
 @RequiredArgsConstructor
 @Service
@@ -20,5 +23,11 @@ public class ClientServiceImpl implements ClientService {
         account = accountService.create(account);
         client.setAccount(account);
         return repository.save(client);
+    }
+
+    @Override
+    @Transactional
+    public void addCard(final UUID clientId, final UUID cardId) {
+        repository.addCard(clientId.toString(), cardId.toString());
     }
 }

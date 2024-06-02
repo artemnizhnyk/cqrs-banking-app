@@ -6,9 +6,10 @@ import com.artemnizhnyk.common.domain.model.Client;
 import com.artemnizhnyk.common.repository.CardRepository;
 import com.artemnizhnyk.common.service.client.ClientQueryService;
 import com.artemnizhnyk.eventhandler.service.client.ClientService;
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
+
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
